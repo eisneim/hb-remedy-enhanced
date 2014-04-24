@@ -1,0 +1,8 @@
+header.post-list-header
+  div.avarta
+   span
+      img(src="images/arvarta.png", alt="eisneim")
+  h1.post-list-header-title <strong>#{ name }</strong>'s Blog
+  p here goes some destription , you can edit it in the index.jade file.
+
+!= partial("_shared/articles", { postlimit: 10 })

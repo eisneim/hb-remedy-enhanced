@@ -1,0 +1,43 @@
+footer.footer(role="contentinfo")
+	p <a href="http://eisneim.com" target="_blank">Your blog</a>&copy;2014. | <a href="https://twitter.com/someone" target="_blank">Twitter</a> | <a href="https://github.com/eisneim" target="_blank">Github</a> | Built with <a href="http://harpjs.com" target="_blank">Harp</a>. 
+
+script(src="/lib/jquery.js")
+script(src="/lib/prism/prism.js",data-default-language="markup")
+script.
+	$(function(){
+		var bgcolors = {
+			red:'#D84945',
+			pale:'#d1d1d1',
+			light_purple:'#CC99CD',
+			purple:'#5C78C6',
+			orange:'#FE6D44',
+			coffee:'#AF7C49',
+			blue:'#46788F',//316AAC
+			cyan:'#8DC7F9',
+			yellow:'#F4C800',
+			green:'#00C74C',
+			light_green:'#589A5F',
+			lime:'#BAE256',
+			dark:'#2D2D2D',
+			bg2:'#3E4A55',
+			bg:'#003837',
+		},
+		match = {
+			bg:'green',
+			bg2:'light_green',
+			dark:'light_purple',
+			coffee:'yellow',
+			orange:'dark',
+			red:'orange',
+
+		};
+		var $header = $('.opening');
+		var bg = $header.data('headerbg')||'dark_grey';
+		
+		$header.css('background-color',bgcolors[bg]);
+		//change title color
+		$header.css('color',bgcolors[ match[bg]? match[bg]:'pale' ]);
+		
+		
+		
+	});

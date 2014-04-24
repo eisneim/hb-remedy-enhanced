@@ -1,0 +1,13 @@
+{
+  "globals": {
+    "title": "把坑填上 - 咋们来聊聊angularJS",
+    "description": "dev blog about web front/end using javascript,nodejs,anuglarjs,mongodb.",
+    "name": "Eisneim Terry",
+    "email": "eisneim1@gmail.com",
+    "uri": "eisneim.com",
+
+    "typekit": false,
+    "analytics": false,
+    "disqus": false
+  }
+}
